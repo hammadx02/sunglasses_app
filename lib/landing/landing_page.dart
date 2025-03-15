@@ -36,7 +36,10 @@ class LandingPage extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),
-                ).animate().fadeIn(duration: 500.ms).slideY(begin: 0.1, end: 0),
+                )
+                    .animate()
+                    .fadeIn(duration: 500.ms, delay: 400.ms)
+                    .slideY(begin: 0.1, end: 0),
                 const SizedBox(height: 40),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
