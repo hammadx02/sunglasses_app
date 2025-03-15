@@ -668,8 +668,8 @@ class _ProductDetailsState extends State<ProductDetails> {
                       ),
                     )
                         .animate()
-                        .fadeIn(duration: 500.ms)
-                        .slideX(begin: -0.1, end: 0),
+                        .fadeIn(duration: 500.ms, delay: 300.ms)
+                        .slideX(begin: -0.1, end: 0, delay: 300.ms),
                     Icon(
                       Icons.add,
                       color: Colors.black,
