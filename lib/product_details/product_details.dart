@@ -577,7 +577,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                           ),
                           const SizedBox(height: 10),
                           Text(
-                            'Color ${selectedIndex + 1}',
+                            'Color ${index + 1}',
                             style: TextStyle(
                               fontSize: 15,
                               inherit: false,
@@ -608,16 +608,16 @@ class _ProductDetailsState extends State<ProductDetails> {
                       ),
                     )
                         .animate()
-                        .fadeIn(duration: 500.ms, delay: 300.ms)
-                        .slideX(begin: -0.1, end: 0, delay: 300.ms),
+                        .fadeIn(duration: 500.ms, delay: 400.ms)
+                        .slideX(begin: -0.1, end: 0, delay: 400.ms),
                     const Icon(
                       Icons.add,
                       color: Colors.black,
                       size: 25,
                     )
                         .animate()
-                        .fadeIn(duration: 500.ms, delay: 300.ms)
-                        .slideX(begin: 0.1, end: 0, delay: 300.ms),
+                        .fadeIn(duration: 500.ms, delay: 400.ms)
+                        .slideX(begin: 0.1, end: 0, delay: 400.ms),
                   ],
                 ),
               ),
@@ -638,16 +638,16 @@ class _ProductDetailsState extends State<ProductDetails> {
                       ),
                     )
                         .animate()
-                        .fadeIn(duration: 500.ms, delay: 300.ms)
-                        .slideX(begin: -0.1, end: 0, delay: 300.ms),
+                        .fadeIn(duration: 500.ms, delay: 400.ms)
+                        .slideX(begin: -0.1, end: 0, delay: 400.ms),
                     const Icon(
                       Icons.add,
                       color: Colors.black,
                       size: 25,
                     )
                         .animate()
-                        .fadeIn(duration: 500.ms, delay: 300.ms)
-                        .slideX(begin: 0.1, end: 0, delay: 300.ms),
+                        .fadeIn(duration: 500.ms, delay: 400.ms)
+                        .slideX(begin: 0.1, end: 0, delay: 400.ms),
                   ],
                 ),
               ),
@@ -668,16 +668,16 @@ class _ProductDetailsState extends State<ProductDetails> {
                       ),
                     )
                         .animate()
-                        .fadeIn(duration: 500.ms, delay: 300.ms)
-                        .slideX(begin: -0.1, end: 0, delay: 300.ms),
+                        .fadeIn(duration: 500.ms, delay: 400.ms)
+                        .slideX(begin: -0.1, end: 0, delay: 400.ms),
                     const Icon(
                       Icons.add,
                       color: Colors.black,
                       size: 25,
                     )
                         .animate()
-                        .fadeIn(duration: 500.ms, delay: 300.ms)
-                        .slideX(begin: 0.1, end: 0, delay: 300.ms),
+                        .fadeIn(duration: 500.ms, delay: 400.ms)
+                        .slideX(begin: 0.1, end: 0, delay: 400.ms),
                   ],
                 ),
               ),
