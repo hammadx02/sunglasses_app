@@ -112,7 +112,10 @@ class ProductTile extends StatelessWidget {
                   fit: BoxFit.contain,
                 ),
               ),
-            ).animate().fadeIn(duration: 500.ms).slideX(begin: -0.1, end: 0),
+            )
+                .animate()
+                .fadeIn(duration: 500.ms, delay: 500.ms)
+                .slideX(begin: -0.1, end: 0, delay: 500.ms),
             const SizedBox(width: 20),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -145,7 +148,10 @@ class ProductTile extends StatelessWidget {
                   ),
                 ),
               ],
-            ).animate().fadeIn(duration: 500.ms).slideX(begin: 0.1, end: 0),
+            )
+                .animate()
+                .fadeIn(duration: 500.ms, delay: 500.ms)
+                .slideX(begin: 0.1, end: 0, delay: 500.ms),
           ],
         ),
       ),
