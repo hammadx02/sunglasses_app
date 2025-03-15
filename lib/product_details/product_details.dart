@@ -396,14 +396,14 @@ class _ProductDetailsState extends State<ProductDetails> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         gradient: LinearGradient(
           colors: [
             Color.fromARGB(255, 187, 187, 187),
             Color.fromARGB(255, 235, 235, 235),
             Color.fromRGBO(240, 241, 238, 1),
           ],
-          stops: const [0, .15, 1],
+          stops: [0, .15, 1],
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
         ),
@@ -447,7 +447,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                       const Spacer(),
                       IconButton(
                         onPressed: () {},
-                        icon: Icon(
+                        icon: const Icon(
                           cupertino.CupertinoIcons.heart,
                           color: Colors.black,
                         ),
@@ -460,7 +460,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                 ),
                 const SizedBox(height: 30),
                 CustomPaint(
-                  painter: DashedLinePainter(),
+                  painter: const DashedLinePainter(),
                   child: Container(
                     alignment: Alignment.center,
                     height: 1,
@@ -468,7 +468,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                   ),
                 ).animate().fadeIn(duration: 500.ms),
                 const SizedBox(height: 8),
-                Text(
+                const Text(
                   '360',
                   style: TextStyle(
                     inherit: false,
@@ -485,7 +485,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                 ).animate().fadeIn(duration: 500.ms).scale(delay: 500.ms),
                 const SizedBox(height: 20),
                 CustomPaint(
-                  painter: DashedLinePainter(showDot: false),
+                  painter: const DashedLinePainter(showDot: false),
                   child: Container(
                     alignment: Alignment.center,
                     height: 1,
@@ -506,11 +506,11 @@ class _ProductDetailsState extends State<ProductDetails> {
 
   ClipRRect bottomCard() {
     return ClipRRect(
-      borderRadius: BorderRadius.vertical(top: Radius.circular(55)),
+      borderRadius: const BorderRadius.vertical(top: Radius.circular(55)),
       child: Container(
         width: double.infinity,
         padding: const EdgeInsets.only(left: 40),
-        decoration: BoxDecoration(color: Colors.white),
+        decoration: const BoxDecoration(color: Colors.white),
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -556,7 +556,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                                         ),
                                       ),
                                       if (selectedIndex == index)
-                                        Positioned(
+                                        const Positioned(
                                           bottom: 10,
                                           left: 10,
                                           child: Icon(
@@ -597,7 +597,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
+                    const Text(
                       'Product Details',
                       style: TextStyle(
                         fontSize: 23,
@@ -608,16 +608,16 @@ class _ProductDetailsState extends State<ProductDetails> {
                       ),
                     )
                         .animate()
-                        .fadeIn(duration: 500.ms)
-                        .slideX(begin: -0.1, end: 0),
-                    Icon(
+                        .fadeIn(duration: 500.ms, delay: 300.ms)
+                        .slideX(begin: -0.1, end: 0, delay: 300.ms),
+                    const Icon(
                       Icons.add,
                       color: Colors.black,
                       size: 25,
                     )
                         .animate()
-                        .fadeIn(duration: 500.ms)
-                        .slideX(begin: 0.1, end: 0),
+                        .fadeIn(duration: 500.ms, delay: 300.ms)
+                        .slideX(begin: 0.1, end: 0, delay: 300.ms),
                   ],
                 ),
               ),
@@ -627,7 +627,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
+                    const Text(
                       'Care',
                       style: TextStyle(
                         fontSize: 23,
@@ -638,16 +638,16 @@ class _ProductDetailsState extends State<ProductDetails> {
                       ),
                     )
                         .animate()
-                        .fadeIn(duration: 500.ms)
-                        .slideX(begin: -0.1, end: 0),
-                    Icon(
+                        .fadeIn(duration: 500.ms, delay: 300.ms)
+                        .slideX(begin: -0.1, end: 0, delay: 300.ms),
+                    const Icon(
                       Icons.add,
                       color: Colors.black,
                       size: 25,
                     )
                         .animate()
-                        .fadeIn(duration: 500.ms)
-                        .slideX(begin: 0.1, end: 0),
+                        .fadeIn(duration: 500.ms, delay: 300.ms)
+                        .slideX(begin: 0.1, end: 0, delay: 300.ms),
                   ],
                 ),
               ),
@@ -657,7 +657,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
+                    const Text(
                       'Reviews',
                       style: TextStyle(
                         fontSize: 23,
@@ -670,14 +670,14 @@ class _ProductDetailsState extends State<ProductDetails> {
                         .animate()
                         .fadeIn(duration: 500.ms, delay: 300.ms)
                         .slideX(begin: -0.1, end: 0, delay: 300.ms),
-                    Icon(
+                    const Icon(
                       Icons.add,
                       color: Colors.black,
                       size: 25,
                     )
                         .animate()
-                        .fadeIn(duration: 500.ms)
-                        .slideX(begin: 0.1, end: 0),
+                        .fadeIn(duration: 500.ms, delay: 300.ms)
+                        .slideX(begin: 0.1, end: 0, delay: 300.ms),
                   ],
                 ),
               ),
