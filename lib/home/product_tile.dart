@@ -5,8 +5,11 @@ import 'package:sunglasses/product_details/product_details.dart';
 class ProductTile extends StatelessWidget {
   final int index;
   final String assetPath;
-  const ProductTile({required this.index, required this.assetPath, Key? key})
-      : super(key: key);
+  const ProductTile({
+    required this.index,
+    required this.assetPath,
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
